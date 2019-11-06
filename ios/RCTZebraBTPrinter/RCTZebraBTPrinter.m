@@ -59,23 +59,14 @@ RCT_EXPORT_METHOD(
 
         if(success == YES){
 
-//          NSLog(@"IOS >> Connected %@", userText1);
-
-//          NSString *testLabel = @"^XA^FO100,60^A0N,25,25^FB400,2,10,C,0^FDAlex Kuzmenya. Alex Kuzmenya. long ling 231^FS^XZ";
-
-            NSString *printLabel;
-            // A label file always begins with the “!” character followed by an “x” offset parameter, “x” and “y” axis resolutions, a label length and finally a quantity of labels to print.
-
-            printLabel = [NSString stringWithFormat: @"! %@", userCommand];
-
-//          NSString *testLabel = @"! 0 200 200 210 1\r\nTEXT 4 0 30 40 This is a CPCL test.\r\nFORM\r\nPRINT\r\n";
+        
 
             NSError *error = nil;
 
             // Send the data to printer as a byte array.
             // NSData *data = [NSData dataWithBytes:[testLabel UTF8String] length:[testLabel length]];
 
-            success = success && [thePrinterConn write:[printLabel dataUsingEncoding:NSUTF8StringEncoding] error:&error];
+            success = success && [thePrinterConn write:[userCommand dataUsingEncoding:NSUTF8StringEncoding] error:&error];
 
             NSLog(@"IOS >> Sending Data");
 

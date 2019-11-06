@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRCTZebraBTPrinter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTZebraBTPrinter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F87BE7237316E600F31378 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		3833DF091F71B0BA0078EAB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3833DF0A1F71B0BA0078EAB1 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		3833DF0B1F71B0BA0078EAB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +132,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				18F87BE7237316E600F31378 /* ExternalAccessory.framework */,
 				3847C7371F71908100C2ABF7 /* Frameworks */,
 				3847C7221F718F7A00C2ABF7 /* Libraries */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -177,6 +179,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
